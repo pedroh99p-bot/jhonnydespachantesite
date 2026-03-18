@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#09090B">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Jhonny | Assessoria Documental de Elite | Armas, Blindados e Veículos</title>
-<meta name="description" content="Especialista em burocracia complexa: Posse de Armas, Veículos Blindados, Retirada de Multas e Serviços Veiculares Premium. Sigilo e rapidez garantidos.">
+<title>Jhonny | Despachante Documentalista | Armas, Blindados e Veículos</title>
+<meta name="description" content="Especialista em burocracia complexa: Posse de Armas, Veículos Blindados, Recursos de Multas e Serviços Veiculares. Rigor técnico e agilidade.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -335,6 +335,15 @@
   .why-card h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 12px; color: var(--white); text-transform: uppercase; }
   .why-card p { font-size: 14px; color: var(--gray); line-height: 1.6; }
 
+  /* ── SERVIÇOS DETRAN / COMPLETO ── */
+  #servicos-detran { background: var(--dark); border-top: 1px solid rgba(255,255,255,0.05); }
+  .detran-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-top: 48px; }
+  .detran-card { background: var(--black); border: 1px solid rgba(212,175,55,0.15); border-radius: 6px; padding: 28px; transition: all 0.3s; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden; }
+  .detran-card:hover { border-color: var(--accent-bright); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); background: var(--dark2); }
+  .detran-icon { width: 44px; height: 44px; background: rgba(212,175,55,0.1); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--accent-bright); }
+  .detran-card h4 { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.5px;}
+  .detran-card p { font-size: 14px; color: var(--gray); line-height: 1.5; }
+
   /* ── SERVIÇOS PRINCIPAIS (Grid 2x2) ── */
   #servicos { background: var(--dark); position: relative; }
   #servicos::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.2), transparent); }
@@ -561,18 +570,18 @@
 <div class="roller-container">
   <div class="roller-track">
     <div class="roller-item">
-      <span>⚡ ASSESSORIA DOCUMENTAL DE ELITE</span><span>•</span>
+      <span>⚡ DESPACHANTE DOCUMENTALISTA</span><span>•</span>
       <span>🛡️ POSSE E REGISTRO DE ARMAS</span><span>•</span>
-      <span>🚗 VEÍCULOS BLINDADOS</span><span>•</span>
+      <span>🚗 REGULARIZAÇÃO DE BLINDADOS</span><span>•</span>
       <span>🛑 RECURSOS DE MULTAS E SUSPENSÃO</span><span>•</span>
-      <span>📄 SERVIÇOS VEICULARES PREMIUM</span><span>•</span>
+      <span>📄 SERVIÇOS VEICULARES (DETRAN)</span><span>•</span>
     </div>
     <div class="roller-item">
-      <span>⚡ ASSESSORIA DOCUMENTAL DE ELITE</span><span>•</span>
+      <span>⚡ DESPACHANTE DOCUMENTALISTA</span><span>•</span>
       <span>🛡️ POSSE E REGISTRO DE ARMAS</span><span>•</span>
-      <span>🚗 VEÍCULOS BLINDADOS</span><span>•</span>
+      <span>🚗 REGULARIZAÇÃO DE BLINDADOS</span><span>•</span>
       <span>🛑 RECURSOS DE MULTAS E SUSPENSÃO</span><span>•</span>
-      <span>📄 SERVIÇOS VEICULARES PREMIUM</span><span>•</span>
+      <span>📄 SERVIÇOS VEICULARES (DETRAN)</span><span>•</span>
     </div>
   </div>
 </div>
@@ -586,7 +595,7 @@
     </div>
   </div>
   <div class="loader-name">Jhonny</div>
-  <div class="loader-sub">Assessoria de Elite</div>
+  <div class="loader-sub">Despachante Documentalista</div>
   <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
 </div>
 
@@ -594,7 +603,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <div class="menu-top">
     <span class="brand-top">Jhonny</span>
-    <span class="brand-sub">Assessoria de Elite</span>
+    <span class="brand-sub">Despachante Documentalista</span>
   </div>
   <ul>
     <li><a href="#servicos" onclick="closeMobileMenu()">Especialidades</a></li>
@@ -628,7 +637,7 @@
     </div>
     <div>
       <span class="brand-top">Jhonny</span>
-      <span class="brand-sub">Assessoria de Elite</span>
+      <span class="brand-sub">Despachante Documentalista</span>
     </div>
   </a>
   <ul class="nav-links">
@@ -653,50 +662,50 @@
   <div class="hero-content">
     <div>
       <div class="hero-badge">A Burocracia não pode travar a sua vida</div>
-      <h1 class="hero-title">Sua Liberdade e Patrimônio <span class="accent">Regularizados</span> com Sigilo Absoluto</h1>
-      <p class="hero-subtitle">Especialista na aprovação de documentação complexa: <strong>Posse de Armas, Veículos Blindados, Retirada de Multas e Serviços Veiculares Premium.</strong> Deixe as filas e exigências legais nas mãos de quem entende.</p>
+      <h1 class="hero-title">Sua Liberdade e Patrimônio <span class="accent">Regularizados</span> com Rigor Técnico</h1>
+      <p class="hero-subtitle">Especialista em documentação complexa: <strong>Posse de Armas, Veículos Blindados, Recursos de Multas e Burocracia Veicular.</strong> Deixe a estruturação técnica do seu processo nas mãos de quem entende.</p>
       
       <div class="hero-stats">
-        <div class="stat-item"><span class="stat-number">+1000</span><span class="stat-label">Processos<br>Aprovados</span></div>
-        <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Sigilo e<br>Legalidade</span></div>
+        <div class="stat-item"><span class="stat-number">+1000</span><span class="stat-label">Processos<br>Conduzidos</span></div>
+        <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Rigor<br>Técnico</span></div>
         <div class="stat-item"><span class="stat-number">5.0</span><span class="stat-label">Excelência<br>no Google</span></div>
       </div>
       
       <div class="hero-btns">
         <a href="https://wa.me/5521976559086?text=Olá,%20Jhonny!%20Desejo%20uma%20assessoria%20impecável%20para%20meus%20documentos." target="_blank" class="btn-primary">
-          Solicitar Assessoria
+          Iniciar Atendimento
         </a>
         <a href="#pre-triagem" class="btn-accent">Analisar Meu Caso ↓</a>
       </div>
     </div>
     
     <div class="hero-card">
-      <h3>Atendimento Exclusivo</h3>
-      <p>Selecione sua necessidade e receba um direcionamento imediato e sigiloso.</p>
+      <h3>Atendimento Especializado</h3>
+      <p>Selecione sua necessidade e receba um direcionamento técnico imediato.</p>
       <div class="quick-form">
         <select id="hero-select">
           <option value="">Qual a sua demanda principal?</option>
           <option value="Posse de Arma">🛡️ Posse / Registro de Arma</option>
-          <option value="Veículo Blindado">🚗 Documentação de Blindado</option>
-          <option value="Retirada de Multas">🛑 Retirada de Multas / CNH</option>
-          <option value="Serviços Veiculares">📄 Transferência / Licenciamento</option>
+          <option value="Veículo Blindado">🚗 Regularização de Blindado</option>
+          <option value="Recurso de Multas">🛑 Recurso de Multas / CNH</option>
+          <option value="Serviços Veiculares">📄 Serviços Veiculares (DETRAN)</option>
         </select>
         <input type="text" id="hero-nome" placeholder="Seu nome" />
         <button class="btn-wpp" onclick="sendHeroForm()">
           Falar no WhatsApp
         </button>
       </div>
-      <div class="trust-line"><span>✓</span> Resposta prioritária · Amparo Legal Garantido</div>
+      <div class="trust-line"><span>✓</span> Resposta prioritária · Estruturação Legal</div>
     </div>
   </div>
 </section>
 
 <!-- STRIP -->
 <div class="strip">
-  <div class="strip-item"><div class="ibox">🛡️</div><div><strong>Sigilo Absoluto</strong><span>Discrição total em seu processo</span></div></div>
-  <div class="strip-item"><div class="ibox">⚖️</div><div><strong>Amparo Legal</strong><span>Dentro de todas as normas (PF/Exército)</span></div></div>
-  <div class="strip-item"><div class="ibox">⚡</div><div><strong>Agilidade Premium</strong><span>Sem perda de tempo em filas</span></div></div>
-  <div class="strip-item"><div class="ibox">⭐</div><div><strong>Especialista</strong><span>Foco na aprovação de casos difíceis</span></div></div>
+  <div class="strip-item"><div class="ibox">🛡️</div><div><strong>Rigor Técnico</strong><span>Estruturação sólida do seu processo</span></div></div>
+  <div class="strip-item"><div class="ibox">⚖️</div><div><strong>Amparo Legal</strong><span>Conhecimento das normas (PF/Detran)</span></div></div>
+  <div class="strip-item"><div class="ibox">⚡</div><div><strong>Agilidade Operacional</strong><span>Otimização de tempo e burocracia</span></div></div>
+  <div class="strip-item"><div class="ibox">⭐</div><div><strong>Especialista</strong><span>Foco na resolução de casos complexos</span></div></div>
 </div>
 
 <!-- SERVIÇOS PRINCIPAIS -->
@@ -704,9 +713,9 @@
   <div class="container">
     <div class="services-header">
       <div>
-        <span class="section-tag">Assessoria Documental Especializada</span>
-        <h2 class="section-title">4 PILARES DA NOSSA<br>ATUAÇÃO PREMIUM</h2>
-        <p class="section-subtitle">Processos que exigem conhecimento técnico rigoroso não podem ser deixados nas mãos de amadores. Resolvemos o complexo por você.</p>
+        <span class="section-tag">Atuação Estratégica</span>
+        <h2 class="section-title">4 PILARES DA NOSSA<br>GESTÃO DOCUMENTAL</h2>
+        <p class="section-subtitle">Processos que exigem conhecimento técnico rigoroso não podem ser conduzidos de forma amadora. Nós estruturamos a base legal para maximizar suas chances.</p>
       </div>
     </div>
     
@@ -718,14 +727,14 @@
             <div class="service-lg-icon">🛡️</div>
             <h3>Posse de Armas</h3>
           </div>
-          <p>Assessoria completa e rigorosa para aprovação da sua posse de arma de fogo. Lidamos com os trâmites legais junto à Polícia Federal e Exército com total discrição e precisão.</p>
+          <p>Condução técnica e rigorosa para a montagem do seu processo de posse de arma de fogo. Lidamos com os trâmites e exigências documentais junto à Polícia Federal e Exército.</p>
           <ul class="service-features">
-            <li>Montagem do processo exigido</li>
+            <li>Montagem estruturada do dossiê</li>
             <li>Agendamentos e acompanhamento</li>
-            <li>Orientação para Laudo Psicológico e Tiro</li>
+            <li>Orientação sobre laudos exigidos</li>
           </ul>
         </div>
-        <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Quero%20saber%20mais%20sobre%20o%20processo%20de%20Posse%20de%20Arma." target="_blank" class="service-link-lg">Consultar Viabilidade →</a>
+        <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Quero%20saber%20mais%20sobre%20o%20processo%20de%20Posse%20de%20Arma." target="_blank" class="service-link-lg">Consultar Processo →</a>
       </div>
 
       <!-- Card 2 -->
@@ -735,11 +744,11 @@
             <div class="service-lg-icon">🚗</div>
             <h3>Carros Blindados</h3>
           </div>
-          <p>Veículos blindados exigem regulamentação específica. Cuidamos da autorização e registro para que você rode com seu patrimônio protegido e 100% regularizado.</p>
+          <p>Veículos blindados exigem regulamentação criteriosa. Estruturamos o processo de autorização e registro para que seu patrimônio circule dentro da legalidade.</p>
           <ul class="service-features">
-            <li>Autorização do Exército</li>
+            <li>Assessoria para Autorização no Exército</li>
             <li>Inclusão de Blindagem no CRLV</li>
-            <li>Regularização de blindados usados</li>
+            <li>Gestão documental de blindados usados</li>
           </ul>
         </div>
         <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Preciso%20regularizar%20a%20documentação%20de%20um%20Veículo%20Blindado." target="_blank" class="service-link-lg">Regularizar Blindado →</a>
@@ -750,16 +759,16 @@
         <div>
           <div class="service-lg-header">
             <div class="service-lg-icon">🛑</div>
-            <h3>Retirada de Multas</h3>
+            <h3>Recursos de Multas</h3>
           </div>
-          <p>Proteja seu direito de dirigir. Formulamos defesas técnicas consistentes para cancelamento de autuações indevidas, multas gravíssimas e suspensão da CNH.</p>
+          <p>Elaboramos defesas técnicas e estruturadas visando o direito do condutor, analisando falhas formais em autuações, multas gravíssimas e processos de suspensão da CNH.</p>
           <ul class="service-features">
-            <li>Recursos em todas as instâncias</li>
-            <li>Defesa contra Suspensão/Cassação</li>
-            <li>Análise de infrações do DETRAN/PRF</li>
+            <li>Defesas e recursos bem fundamentados</li>
+            <li>Atuação técnica contra Suspensão/Cassação</li>
+            <li>Análise minuciosa de infrações</li>
           </ul>
         </div>
-        <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Preciso%20de%20ajuda%20com%20Retirada%20de%20Multas/Suspensão." target="_blank" class="service-link-lg">Analisar Infrações →</a>
+        <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Preciso%20de%20ajuda%20com%20Recurso%20de%20Multas/Suspensão." target="_blank" class="service-link-lg">Analisar Infrações →</a>
       </div>
 
       <!-- Card 4 -->
@@ -767,16 +776,16 @@
         <div>
           <div class="service-lg-header">
             <div class="service-lg-icon">📄</div>
-            <h3>Serviços Veiculares</h3>
+            <h3>Burocracia de Trânsito</h3>
           </div>
-          <p>Uma assessoria VIP para a documentação padrão do seu veículo. Evite filas e despachos confusos. Pegamos o problema e devolvemos o documento pronto.</p>
+          <p>Uma gestão técnica para a documentação padrão do seu veículo. Evite erros de preenchimento e perda de tempo com exigências e idas desnecessárias aos postos do Detran.</p>
           <ul class="service-features">
-            <li>Transferência de Propriedade</li>
-            <li>Licenciamento Anual Ágil</li>
-            <li>Emplacamento e 2ª Via de CRLV</li>
+            <li>Processos de Transferência</li>
+            <li>Gestão de Licenciamento Anual</li>
+            <li>Legalizações e alterações de dados</li>
           </ul>
         </div>
-        <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Preciso%20de%20Serviços%20Veiculares%20(Licenciamento/Transferência)." target="_blank" class="service-link-lg">Solicitar Serviço →</a>
+        <a href="https://wa.me/5521976559086?text=Olá%20Jhonny!%20Preciso%20de%20Serviços%20Veiculares." target="_blank" class="service-link-lg">Solicitar Serviço →</a>
       </div>
     </div>
   </div>
@@ -801,8 +810,8 @@
         <div class="quiz-options">
           <button class="quiz-btn" onclick="selectOption(1, 'Posse de Arma de Fogo')"><span class="q-icon">🛡️</span> Posse de Arma</button>
           <button class="quiz-btn" onclick="selectOption(1, 'Regularização de Veículo Blindado')"><span class="q-icon">🚗</span> Veículo Blindado</button>
-          <button class="quiz-btn" onclick="selectOption(1, 'Recurso/Retirada de Multas e CNH')"><span class="q-icon">🛑</span> Retirada de Multas/CNH</button>
-          <button class="quiz-btn" onclick="selectOption(1, 'Licenciamento / Transferência Veicular')"><span class="q-icon">📄</span> Serviços Veiculares Padrão</button>
+          <button class="quiz-btn" onclick="selectOption(1, 'Recurso de Multas e CNH')"><span class="q-icon">🛑</span> Recurso de Multas/CNH</button>
+          <button class="quiz-btn" onclick="selectOption(1, 'Serviços Veiculares Detran')"><span class="q-icon">📄</span> Serviços Veiculares (DETRAN)</button>
         </div>
         <div class="quiz-nav" style="justify-content: flex-end;">
           <button class="btn-next" onclick="nextStep(2)" id="btn-n1" disabled>Próxima Etapa ➔</button>
@@ -847,11 +856,11 @@
     <div class="sobre-layout">
       <div class="sobre-profile-card">
         <div class="sobre-photo-wrap">
-          <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1773843714/Untitled_design_dhmm73.svg" alt="Jhonny - Despachante de Elite">
+          <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1773843714/Untitled_design_dhmm73.svg" alt="Jhonny - Despachante Documentalista">
         </div>
         <div class="sobre-profile-info">
           <strong>Jhonny</strong>
-          <span>Especialista em Burocracia Complexa</span>
+          <span>Despachante Documentalista</span>
           <div class="sobre-profile-actions">
             <a href="https://wa.me/5521976559086" target="_blank" class="btn-wpp-sm">
               <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.522 5.859L.057 23.486a.5.5 0 00.614.62l5.84-1.523A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
@@ -865,16 +874,16 @@
         </div>
       </div>
       <div class="sobre-text">
-        <span class="section-tag">A Autoridade que seu processo exige</span>
-        <h2 class="section-title">O FIM DA BUROCRACIA<br>E DAS DORES DE CABEÇA</h2>
-        <p>Processos em órgãos como <strong>Polícia Federal, Exército e DETRAN</strong> não toleram erros. Um único documento preenchido de forma equivocada pode resultar em meses de atraso ou na negativa definitiva do seu pedido.</p>
-        <p>Minha missão como Especialista Documental é ser a blindagem entre você e a burocracia do Estado. Atuo com <strong>extremo rigor técnico, sigilo e foco absoluto na aprovação</strong>, seja para a posse do seu armamento, documentação do seu carro blindado ou preservação do seu direito de dirigir.</p>
+        <span class="section-tag">O Rigor Técnico que seu processo exige</span>
+        <h2 class="section-title">OTIMIZAÇÃO DE PROCESSOS<br>E SEGURANÇA JURÍDICA</h2>
+        <p>Processos em órgãos como <strong>Polícia Federal, Exército e DETRAN</strong> são minuciosos e complexos. Um único documento estruturado de forma equivocada pode resultar em meses de atraso ou no indeferimento do seu pedido.</p>
+        <p>Minha atuação como Despachante Documentalista é garantir que a burocracia do Estado seja tratada com o máximo de competência. Atuo com <strong>extremo rigor técnico, confidencialidade e estratégias bem fundamentadas</strong> para maximizar as chances de êxito no seu processo, seja ele posse de armamento, documentação veicular ou recursos de trânsito.</p>
         
         <div class="sobre-badges">
           <div class="badge">✓ Análise Técnica Rigorosa</div>
-          <div class="badge">✓ Foco em Aprovação</div>
+          <div class="badge">✓ Fundamentação Legal</div>
           <div class="badge">✓ Atendimento Individualizado</div>
-          <div class="badge">✓ Acompanhamento Ponta a Ponta</div>
+          <div class="badge">✓ Gestão Ponta a Ponta</div>
         </div>
       </div>
     </div>
@@ -894,7 +903,7 @@
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-body">
-          <p>O prazo varia conforme a demanda da Polícia Federal e a agilidade na realização dos laudos (psicológico e tiro). Com nossa assessoria, garantimos a montagem impecável do dossiê, reduzindo drasticamente o risco de exigências que atrasam a análise.</p>
+          <p>O prazo varia estritamente conforme a demanda da Polícia Federal e a realização dos laudos. Nossa gestão documental visa entregar o dossiê com precisão técnica máxima para evitar exigências adicionais, otimizando o tempo de análise pelo órgão.</p>
         </div>
       </div>
       
@@ -904,19 +913,84 @@
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-body">
-          <p>Sim. A blindagem precisa constar no documento do veículo (CRLV) e requer autorização específica. Rodar com blindado irregular pode gerar apreensão. Nós resolvemos toda essa transição legal para você.</p>
+          <p>Sim. A blindagem precisa constar no documento do veículo (CRLV) e passar por trâmites específicos junto ao Exército. Rodar de forma irregular gera passivo legal. Nós estruturamos a documentação necessária para que você faça essa transição conforme a lei.</p>
         </div>
       </div>
       
       <div class="faq-card" onclick="this.classList.toggle('active')">
         <div class="faq-header">
-          <h4>É possível reverter uma suspensão de CNH?</h4>
+          <h4>O recurso de suspensão de CNH é garantido?</h4>
           <span class="faq-icon">+</span>
         </div>
         <div class="faq-body">
-          <p>Em muitos casos, sim. Analisamos as autuações em busca de falhas formais dos órgãos de trânsito (erros no auto de infração, falta de notificação, etc.) e elaboramos recursos técnicos sólidos em todas as instâncias (Defesa Prévia, JARI, CETRAN).</p>
+          <p>Nenhum recurso administrativo possui resultado garantido, pois a decisão cabe aos órgãos julgadores. O que entregamos é uma defesa técnica fundamentada em possíveis falhas formais do auto de infração, assegurando o amplo direito de defesa do condutor nas instâncias cabíveis.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS VEICULARES DETRAN (NEW) -->
+<section id="servicos-detran" class="texture-grid">
+  <div class="container">
+    <div style="text-align: center;">
+      <span class="section-tag">Soluções Completas de Trânsito</span>
+      <h2 class="section-title">SERVIÇOS VEICULARES NO DETRAN</h2>
+      <p class="section-subtitle" style="margin: 0 auto;">Da vistoria de GNV à transferência de propriedade. Deixe a parte burocrática, agendamentos e filas sob nossa responsabilidade.</p>
+    </div>
+
+    <div class="detran-grid">
+      <div class="detran-card">
+        <div class="detran-icon">🔄</div>
+        <h4>Transferência de Veículo</h4>
+        <p>Assessoria completa para transferência de propriedade e jurisdição (estado/município), com conferência documental para evitar exigências no posto.</p>
+      </div>
+      
+      <div class="detran-card">
+        <div class="detran-icon">📄</div>
+        <h4>Licenciamento Anual</h4>
+        <p>Emissão de taxas, verificação de pendências e liberação do CRLV digital atualizado com máxima agilidade.</p>
+      </div>
+      
+      <div class="detran-card">
+        <div class="detran-icon">🔥</div>
+        <h4>Vistoria e Legalização GNV</h4>
+        <p>Inclusão, baixa ou renovação do sistema de Gás Natural Veicular. Orientação sobre o CSV e trâmites de legalização.</p>
+      </div>
+      
+      <div class="detran-card">
+        <div class="detran-icon">🛠️</div>
+        <h4>Legalização de Alterações</h4>
+        <p>Processo de autorização e legalização de suspensão rebaixada, troca de cor, mudança de combustível ou substituição de motor.</p>
+      </div>
+      
+      <div class="detran-card">
+        <div class="detran-icon">📋</div>
+        <h4>1º Emplacamento (Zero KM)</h4>
+        <p>Gestão documental para emissão do primeiro registro do veículo e emplacamento padrão Mercosul de forma otimizada.</p>
+      </div>
+      
+      <div class="detran-card">
+        <div class="detran-icon">📑</div>
+        <h4>2ª Via de Documentos</h4>
+        <p>Emissão de segunda via do CRV (Recibo de Compra e Venda) ou CRLV em casos de perda, roubo ou rasura.</p>
+      </div>
+      
+      <div class="detran-card">
+        <div class="detran-icon">🛑</div>
+        <h4>Baixa de Veículo (Sucata)</h4>
+        <p>Procedimento de baixa definitiva do registro de veículos acidentados ou irrecuperáveis junto à base estadual e nacional.</p>
+      </div>
+
+      <div class="detran-card">
+        <div class="detran-icon">🤝</div>
+        <h4>Comunicação de Venda</h4>
+        <p>Proteção imediata para o vendedor. Inclusão da comunicação de venda no sistema para isentar responsabilidades futuras.</p>
+      </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 48px;">
+      <a href="https://wa.me/5521976559086?text=Olá,%20Jhonny!%20Preciso%20de%20informações%20sobre%20um%20serviço%20do%20DETRAN." target="_blank" class="btn-primary" style="display: inline-flex;">Consultar Serviço Específico</a>
     </div>
   </div>
 </section>
@@ -965,11 +1039,11 @@
 
 <!-- CTA FINAL -->
 <section class="cta-section">
-  <h2>Pare de perder noites de sono<br><span class="accent">com processos travados</span></h2>
-  <p>Tempo e privacidade são seus maiores ativos. Deixe que a equipe Jhonny assuma a linha de frente da sua regularização, operando nos bastidores com maestria legal.</p>
+  <h2>A Burocracia não precisa<br><span class="accent">travar a sua rotina</span></h2>
+  <p>Tempo é o seu maior ativo. Delegue as etapas burocráticas, agendamentos e emissões documentais a um profissional especializado e focado em resultados técnicos.</p>
   <div class="cta-btns">
     <a href="https://wa.me/5521976559086?text=Olá,%20Jhonny!%20Estou%20pronto%20para%20iniciar%20a%20minha%20assessoria%20documental." target="_blank" class="btn-primary">
-      Solicitar Assessoria Imediata
+      Solicitar Análise Documental
     </a>
   </div>
 </section>
@@ -982,6 +1056,13 @@
         <div class="ficon">
           <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1773426632/Untitled_design_26_i0rhzj.png" alt="Jhonny Logo">
         </div>
+        <div>
+          <strong>Jhonny</strong>
+          <small>Despachante Documentalista</small>
+        </div>
+      </div>
+      <p class="fdesc">Escritório focado em gestão documental: Posse de Armas, Veículos Blindados, Defesas Veiculares e trâmites de trânsito.</p>
+    </div>
         <div>
           <strong>Jhonny</strong>
           <small>Assessoria de Elite</small>
@@ -1098,7 +1179,7 @@
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.service-card-lg, .why-card, .faq-card, .info-card, .quiz-wrapper').forEach(function(el) {
+  document.querySelectorAll('.service-card-lg, .why-card, .faq-card, .info-card, .quiz-wrapper, .detran-card').forEach(function(el) {
     el.style.opacity = '0'; 
     el.style.transform = 'translateY(20px)'; 
     el.style.transition = 'all 0.6s ease';
