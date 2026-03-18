@@ -24,7 +24,6 @@
     --dark: #111111;
     --dark2: #1A1A1A;
     --dark3: #2A2A2A;
-
     
     /* Textos neutros */
     --gray: #A1A1AA;
@@ -299,6 +298,28 @@
   .section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 4.5vw, 56px); line-height: 1; letter-spacing: 1px; color: var(--white); margin-bottom: 16px; text-transform: uppercase; }
   .section-subtitle { font-size: 16px; color: var(--gray); max-width: 600px; line-height: 1.65; }
 
+  /* ── TEXTURAS DE FUNDO ── */
+  .texture-lines::before, .texture-grid::before, .texture-dots::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  }
+  .texture-lines > .container, .texture-grid > .container, .texture-dots > .container { position: relative; z-index: 1; }
+  
+  .texture-lines::before {
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 24px);
+  }
+  .texture-grid::before {
+    background-image: linear-gradient(rgba(212,175,55,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 80%);
+  }
+  .texture-dots::before {
+    background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 20px 20px;
+    mask-image: linear-gradient(180deg, black 0%, transparent 80%);
+    -webkit-mask-image: linear-gradient(180deg, black 0%, transparent 80%);
+  }
+
   /* ── PROBLEMAS ── */
   #problemas { background: var(--black); }
   .problem-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
@@ -381,14 +402,14 @@
   .sobre-layout { display: grid; grid-template-columns: 460px 1fr; gap: 80px; align-items: center; position: relative; z-index: 1; }
   .sobre-photo-wrap {
     position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.8);
-    border: 1px solid rgba(212,175,55,0.25); background: linear-gradient(180deg, var(--dark2), var(--black));
-    display: flex; align-items: center; justify-content: center; padding: 40px; min-height: 500px;
+    border: 1px solid rgba(212,175,55,0.25); background: var(--dark2);
+    display: flex; align-items: center; justify-content: center; min-height: 500px;
   }
-  .sobre-photo-wrap img { width: 100%; max-width: 380px; display: block; object-fit: contain; position: relative; z-index: 2;}
+  .sobre-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; position: absolute; inset: 0; z-index: 2;}
   .sobre-photo-wrap::after {
-    content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(5,5,5,0.95)); z-index: 1;
+    content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(5,5,5,0.95)); z-index: 3; pointer-events: none;
   }
-  .sobre-photo-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 32px; z-index: 3; border-top: 1px solid rgba(212,175,55,0.1); background: rgba(0,0,0,0.6); backdrop-filter: blur(5px);}
+  .sobre-photo-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 32px; z-index: 4; border-top: 1px solid rgba(212,175,55,0.1); background: rgba(0,0,0,0.6); backdrop-filter: blur(5px);}
   .sobre-photo-caption strong { font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 1px; display: block; color: var(--white); }
   .sobre-photo-caption span { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-bright); }
   .sobre-text h2 { margin-bottom: 24px; }
@@ -510,7 +531,7 @@
     .quiz-options { grid-template-columns: 1fr; }
     .problem-grid { grid-template-columns: 1fr; gap: 12px; }
     .sobre-layout { grid-template-columns: 1fr; gap: 32px; }
-    .sobre-photo-wrap { min-height: 320px; padding: 40px; }
+    .sobre-photo-wrap { min-height: 360px; padding: 0; }
     .loc-layout { grid-template-columns: 1fr; gap: 28px; }
     .map-wrap { min-height: 280px; }
     .map-wrap iframe { min-height: 280px; }
@@ -677,7 +698,7 @@
 </div>
 
 <!-- SERVIÇOS PRINCIPAIS -->
-<section id="servicos">
+<section id="servicos" class="texture-grid">
   <div class="container">
     <div class="services-header">
       <div>
@@ -760,7 +781,7 @@
 </section>
 
 <!-- QUIZ DE PRÉ-TRIAGEM -->
-<section id="pre-triagem">
+<section id="pre-triagem" class="texture-dots">
   <div class="container">
     <div style="text-align: center; margin-bottom: 40px;">
       <span class="section-tag">Análise Estratégica</span>
@@ -819,12 +840,12 @@
 </section>
 
 <!-- SOBRE / AUTORIDADE -->
-<section id="sobre">
+<section id="sobre" class="texture-lines">
   <div class="container">
     <div class="sobre-layout">
       <div style="position:relative;">
         <div class="sobre-photo-wrap">
-          <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1773426632/Untitled_design_26_i0rhzj.png" alt="Jhonny - Despachante de Elite">
+          <img src="https://res.cloudinary.com/dm9mnc97u/image/upload/v1773800839/Untitled_design_40_augzga.png" alt="Jhonny - Despachante de Elite">
         </div>
         <div class="sobre-photo-caption">
           <strong>Jhonny</strong>
@@ -849,7 +870,7 @@
 </section>
 
 <!-- FAQ -->
-<section id="porque">
+<section id="porque" class="texture-grid">
   <div class="container" style="display: flex; flex-direction: column; align-items: center;">
     <span class="section-tag">Dúvidas Frequentes</span>
     <h2 class="section-title text-center">PERGUNTAS FREQUENTES</h2>
@@ -889,7 +910,7 @@
 </section>
 
 <!-- LOCALIZAÇÃO -->
-<section id="localizacao">
+<section id="localizacao" class="texture-lines">
   <div class="container">
     <span class="section-tag">Escritório Físico</span>
     <h2 class="section-title">ATENDIMENTO PRESENCIAL<br>SOB MEDIDA</h2>
@@ -975,7 +996,8 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2024 Jhonny Assessoria Documental. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Jhonny Assessoria Documental. Todos os direitos reservados.</p>
+    <p>Produzido por <a href="https://www.instagram.com/montanatechlab/" target="_blank">MONTANA</a></p>
   </div>
 </footer>
 
